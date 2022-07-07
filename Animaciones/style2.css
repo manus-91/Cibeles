@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*selectores de etiqueta*/
+
+h1{
+	color: darkgreen;
+}
+
+h3{
+	color: #1B6C15;
+}
+
+h4{
+	color: #56DA2E;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	background-image: url(../img/bubble.jpg);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+
+section article p{
+	color: #155808;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.5rem;
+	line-height: 2.2;
+	font-weight: 400;
+}
+
+h1{
+	font-weight: 500;
+}
+
+
+h3{
+	font-weight: 400;
+}
+
+
+
+h1{
+	font-size: 4rem;
+}
+
+h3{
+	font-size: 3rem;
+}
+
+h4{
+	font-size: 2rem;
+}
+
+
+
+/*selector de clase*/
+
+/*libreria para dererminar peso de letra
+y centralizado de cosas*/
+
+.text-alert{
+	color: yellowgreen;
+}
+
+.text-bold{
+	font-weight: 500;
+}
+
+.text-lignt{
+	font-weight: 300;
+}
+
+.text-regular{
+	font-weight: 400;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.bg-dark{
+	background-color: #37983E;
+}
+
+.bg-light{
+	background-color: #D6D4D4;
+}
+
+.imagen__logo--sm{
+	width: 50%;
+}
+
+.encabezado__box--white{
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    font-size: medium;
+    }
+
+.botonera{
+	background-color: rgba(4, 48, 15, 0.678);
+	font-family: 'Roboto', sans-serif;
+	height: auto;
+    position: sticky;
+    top: 0;
+    padding: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.botonera ul{
+	
+	display: flex;
+}
+.botonera ul li{
+	list-style: none;
+	margin-right: 20px;
+}
+
+.botonera ul li a{
+	font-size: 1.8rem;
+	color: #030002;
+	text-decoration: none;
+	/* transicion */
+	
+
+
+
+} 
+
+
+
+.pie{
+    padding: 10px 0;
+}
+
+
+
+/*BOX MODEL - WIDTH-HEIGHT-MARGIN-PADDING-
+BORDER*/
+
+
+
+
+.quienessomos__articulo{
+	width: 90%;
+	height: auto;
+	margin: 50px auto;
+	padding: 20px 30px;
+	border: double 2px yellowgreen;
+}
+
+
+.valores__articulo{
+	width: 90%;
+	height: 100px;
+	margin: 50px auto;
+	padding: 50px 30px;
+	border: double 2px yellowgreen;
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
+
+.encabezado__img--fluid{
+    width: 100%;
+	height: 30rem;
+	
+
+}
+
+.pie__icon--sm{
+width: 50px;
+}
+
+.pie__titulo--md{
+font-size: 2rem;
+}
+
+nav ul{
+    display: inline-block;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.quienessomos__articulo2{
+	width: 90%;
+	height: auto;
+	margin: auto;
+	padding: 0rem;
+	border-style: none 2px yellowgreen;
+}
+
+flexbox
+productos en promocion
+
+#productos h1,
+#productos h2{
+	text-transform: uppercase;
+	font-size: 3rem;
+	text-align: center;
+	padding: 20px 0;
+	background-color: rgba(139, 133, 15, 0.5);
+	font-family: 'Roboto', sans-serif;
+	margin: 20px 0;
+}
+
+#productos .galeria{
+	margin: 20px;
+	display: flex;
+	justify-content: space-around	;
+}
+
+#productos .galeria figure{
+	text-align: center;
+}
+
+#productos .galeria figure img{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	width: 200px;
+}
+
+#productos	.galeria figure figcaption{
+	font-size: 2.5rem;
+	color: black;
+	padding: 10px 0;
+}
+
+#productos	.galeria p.price{
+	color: #010300;
+	padding-bottom: 10px;
+	font-size: x-large;
+}
+     /* GRIDS */
+
+		/* GRIDS PAGINA PRODUCTOS */
+
+	.secondNav{
+	color: rgb(10, 0, 0);
+	padding: 20px;
+	font-size: 1.3rem;
+	line-height: 1.6rem;
+	}
+
+	.secondNav img{
+		width: 80%;
+	}
+
+	/* defino 3 cols 20 70 10% - 4 rows auto -
+	PAG PRODUCTOS */
+	.contenedor{
+		display: grid;
+		grid-template-columns: 20% 70% 10%;
+		grid-template-rows: repeat(4,auto);
+		grid-template-areas: 
+		"nav nav nav"
+		"header header header"
+		"filtros productos aside"
+		"footer footer footer";
+		}
+		
+	          /* AREAS DE GRID PRODUCTOS */
+	#mainNav{
+		grid-area: nav;
+	}
+
+	#header{
+		grid-area: header;
+	}
+
+	#filtros{
+		grid-area: filtros;
+	}
+
+	#productos{
+		grid-area: productos;
+	}
+
+	#aside{
+		grid-area: aside;
+	}
+
+	#footer{
+		grid-area: footer;
+	}
+
+	/* defino 1 colum auto - 4 rows auto
+	para la PAG PROMOCIONES */
+
+	.contene-promo{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 6.1% 18% auto auto;
+		grid-template-areas:
+		"nav"
+		"header"
+		"promociones"
+		"footer"
+	}
+
+	/* AREAS DE GRID PROMOCIONES */
+
+	#mainNav{
+		grid-area: nav;
+	}
+
+	#header{
+		grid-area: header;
+	}
+
+	#promociones{
+		grid-area: promociones;
+	}
+
+	#footer{
+		grid-area: footer;
+	}
+
+	/* ANIMACIONES */
+
+	@keyframes headerAnimation{
+		0%{background-image: url(../img/viandasimagen.jpg);}
+		50%{background-image: url(../img/viandasimagen2.jpg);}
+		100%{background-image: url(../img/viandasimagen3.jpg);}
+	
+}
+
+header{
+	height: 35vh;
+	animation-name: headerAnimation;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	background-size: cover;
+	animation-timing-function: ease-in;
+}
+
+.botonera li:hover{
+	transform:translate(-10px,-10px);
+	transition: 1s;
+}
