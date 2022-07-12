@@ -1,0 +1,27 @@
+.bg-green{
+    background-color: rgba(4, 48, 15, 0.678);
+}
+
+#botonera img{
+	width: 200px;
+}
+
+body{
+	background-image: url(../img/bubble.jpg);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+.pie{
+    padding: 10px 0;
+	background-color: white;
+	text-align: center;
+}
+
+.pie__icon--sm{
+    width: 50px;
+    }
+    
+    .pie__titulo--md{
+    font-size: 2rem;
+    }
