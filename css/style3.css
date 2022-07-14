@@ -25,3 +25,7 @@ body{
     .pie__titulo--md{
     font-size: 2rem;
     }
+
+  .carousel-inner{
+        height: 40vh;
+    }
